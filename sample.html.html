@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Support Platform</title>
+    <link rel="stylesheet" href="sample.css">
+    <script src="sample.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Farmer Support Platform</h1>
+            <nav>
+                <ul>
+                    <li><a href="#marketplace">Equipment Marketplace</a></li>
+                    <li><a href="#scheme-checker">Scheme Eligibility</a></li>
+                    <li><a href="#consultancy">Expert Consultancy</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Marketplace Section -->
+        <section id="marketplace" class="section">
+            <h2>Equipment Marketplace</h2>
+            <div id="equipment-listings">
+                <!-- Equipment listings will be dynamically populated -->
+            </div>
+            <div class="marketplace-actions">
+                <button id="sell-equipment-btn">Sell Equipment</button>
+                <button id="filter-equipment-btn">Filter Listings</button>
+            </div>
+        </section>
+
+        <!-- Government Scheme Checker Section -->
+        <section id="scheme-checker" class="section">
+            <h2>Government Scheme Eligibility</h2>
+            <form id="scheme-eligibility-form">
+                <div id="scheme-questions">
+                    <!-- Questionnaire will be dynamically generated -->
+                </div>
+                <button type="submit">Check Eligibility</button>
+            </form>
+            <div id="scheme-results"></div>
+        </section>
+
+        <!-- Expert Consultancy Section -->
+        <section id="consultancy" class="section">
+            <h2>Expert Consultancy</h2>
+            <div id="expert-list">
+                <!-- Experts will be dynamically populated -->
+            </div>
+            <div id="consultation-request">
+                <h3>Request Consultation</h3>
+                <form id="consultation-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Describe your agricultural query" required></textarea>
+                    <button type="submit">Submit Request</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modals for additional interactions -->
+    <div id="sell-equipment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>List Equipment for Sale</h3>
+            <form id="sell-equipment-form">
+                <input type="text" placeholder="Equipment Name" required>
+                <input type="number" placeholder="Price" required>
+                <textarea placeholder="Equipment Description" required></textarea>
+                <input type="file" accept="image/*">
+                <button type="submit">List Equipment</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
